@@ -1,17 +1,20 @@
 {
-  "name": "yuri",
+  "name": "angie-amber",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview"
+  },
+  "engines": {
+    "node": ">=20 <23"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.1",
-    "astro": "^5.5.3",
-    "gsap": "^3.12.7",
-    "tailwindcss": "^4.1.1"
+    "astro": "^4.14.0",
+    "@astrojs/vercel": "latest",
+    "@keystatic/core": "latest",
+    "@keystatic/astro": "latest"
   }
 }
