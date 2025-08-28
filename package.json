@@ -8,9 +8,11 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "engines": { "node": ">=20 <23" },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "astro": "^4.14.0",
+    "astro": "^5.0.0",
     "@astrojs/vercel": "latest",
     "@keystatic/core": "latest",
     "@keystatic/astro": "latest"
