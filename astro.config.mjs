@@ -1,9 +1,13 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel';   // importa desde el paquete raíz
+import vercel from '@astrojs/vercel';
 import keystatic from '@keystatic/astro';
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  output: 'server',                     // obligatorio para que exista /keystatic
+  output: 'server',
   adapter: vercel(),
-  integrations: [keystatic()]           // sin opciones; monta /keystatic
+  integrations: [
+    tailwind({ applyBaseStyles: true }),
+    keystatic()
+  ]
 });
