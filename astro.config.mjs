@@ -1,10 +1,10 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import tailwindcss from "@tailwindcss/vite";
+import vercel from '@astrojs/vercel/serverless';
+import keystatic from '@keystatic/astro';
 
-// https://astro.build/config
+// Astro + Keystatic Cloud on Vercel
 export default defineConfig({
- vite: {
-   plugins: [tailwindcss()],
- }
+  output: 'server',
+  adapter: vercel(),
+  integrations: [keystatic({})]
 });
