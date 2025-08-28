@@ -8,17 +8,13 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "engines": {
-    "node": ">=18 <23"
-  },
   "dependencies": {
     "astro": "^5.0.0",
     "@astrojs/vercel": "latest",
-    "@astrojs/tailwind": "latest",
     "@keystatic/core": "latest",
     "@keystatic/astro": "latest",
     "tailwindcss": "^3.4.10",
-    "postcss": "^8.4.41",
-    "autoprefixer": "^10.4.20"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
   }
 }
