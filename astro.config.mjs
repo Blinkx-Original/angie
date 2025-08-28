@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-import vercel from '@astrojs/vercel';        // 👈 paquete raíz
+import vercel from '@astrojs/vercel';   // <— paquete raíz
 import keystatic from '@keystatic/astro';
 
 export default defineConfig({
-  output: 'server',
+  output: 'server',                      // <— obligatorio para /keystatic
   adapter: vercel(),
-  integrations: [keystatic({})]
+  integrations: [keystatic()]            // <— sin opciones, así de simple
 });
